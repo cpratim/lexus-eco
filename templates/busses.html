@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Choose</title>
+		<link rel='stylesheet' href='../static/styles/busses.css'>
+	</head>	
+	<body>
+		<div class='main-header'>
+			Choose A Bus:
+			<hr class='underline'>
+		</div>
+		<div id='main-wrapper'>
+			{% for bus in busses %}
+			<a href='/today/{{bus}}'>
+				<div class='bus'>
+					<div class='number'><p>{{ bus }}</p></div>
+					<div class='first'>
+						<div class='header'>First Stop</div>
+						<div class='details'>
+							<p><b>Time: </b>{{ busses[bus][0] }}</p>
+							<p><b>Location: </b>{{ busses[bus][1] }}</p>
+						</div>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+	</body>
+</html>

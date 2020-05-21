@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bus 61</title>
+        <link rel="stylesheet" href="../static/styles/reserved.css">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <h1 id="header"> Your Reservation - <a href='/remove'> remove</a></h1>
+            <div class="reservation-wrapper">
+                <div class="letter">{{stop}}</div>
+                <div class="data">
+                    <div class="bus"><b>Bus: </b> {{bus}}</div>
+                    <div class="time"><b>Time: </b> {{time}}</div>
+                    <div class="location"><b>Location: </b> {{location}}</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

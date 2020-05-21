@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bus {{bus_number}}</title>
+		<link rel='stylesheet' href='../static/styles/bus.css'>
+		<meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+	</head>
+	<body>
+		<div id='main-wrapper'>
+			<h1 id='header'>Morning Bus: {{bus_number}}</h1>
+			<hr id='underline'>
+			{% for stop in stops %}
+				<div class='connector'>|</div>
+				<div class='stop-wrapper'>
+					<div class='data'>
+						<div class='time'><b>Time:</b><p>{{stops[stop][0]}}</p></div>
+						<div class='location'><b>Location:</b><p> {{stops[stop][1]}}</p></div>
+					</div>
+					{% if counts[stop] == 0 %}
+						<div class='letter' style='background-color: #D23232'>{{stop}}</div>
+					{% else %}
+						<div class='letter'>{{stop}}</div>
+					{% endif %}
+					<div class='count'><b>Expected Students:</b><p>{{counts[stop]}} Students</p></div>
+				</div>
+			{% endfor %}
+		<div id='space'></div>
+		</div>
+	</body>
+</html>

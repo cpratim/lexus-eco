@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{date}}</title>
+		<link rel='stylesheet' href='../static/styles/today.css'>
+		<meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+	</head>
+	<body>
+		
+		{% for message in messages %}
+		<div id='messages'>
+			<div class='message'>{{ message }}</div>
+		</div>
+		{% endfor %}
+		
+		<div id='header'>Bus: {{normal_bus}} - <a href='/busses'>change</a>
+			<div id='description'>Click on a Stop to Reserve it</div>
+		</div>
+		<div id='stop-wrapper'>
+			<div id='left'>
+				{% for stop in left %}
+				<a href='/reserve?bus={{normal_bus}}&stop={{stop}}'>
+					<div class='stop'>
+						<div class='letter'>{{stop}}</div>
+						<div class='data'>
+							<div class='time'><b>Time: </b>{{left[stop][0]}}</div>
+							<div class='location'><b>Location: </b>{{left[stop][1]}}</div>
+						</div>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+			<div id='right'>
+				{% for stop in right %}
+				<a href='/reserve?bus={{normal_bus}}&stop={{stop}}'>
+					<div class='stop'>
+						<div class='letter'>{{stop}}</div>
+						<div class='data'>
+							<div class='time'><b>Time: </b>{{right[stop][0]}}</div>
+							<div class='location'><b>Location: </b>{{right[stop][1]}}</div>
+						</div>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+</html>

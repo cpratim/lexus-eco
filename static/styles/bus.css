@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+@media only screen and (max-width: 1000px) {
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: 'Lato', sans-serif;
+		overflow-x: hidden;
+
+	}
+
+	#main-wrapper {
+		width: 100vw;
+		left: 0vw;
+		height: 100vh;
+		position: absolute;
+		top: 3vh;
+		z-index: 1;
+	}
+
+	#header {
+		text-align: center;
+	}
+
+	#underline {
+		height: 5px;
+		width: 50vw;
+		background-color: black;
+		color: black;
+
+	}
+
+	.stop-wrapper {
+		height: 120px;
+		width: 80%;
+		position: relative;
+		left: 10%;
+		background-color: white;
+		z-index: 2;
+		color: black;
+		margin-bottom: 0px;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+
+	.data {
+		position: relative;
+		left: 5%;
+		top: 15%;
+		width: 40%;
+	}
+
+	.time {
+		font-size: 14px;
+		padding-right: 15px;
+	}
+
+	.location {
+		font-size: 14px;
+		padding-right: 15px;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.letter {
+		width: 60px;
+		height: 60px;
+		background-color: #3DD232;
+		border: 2px solid black;
+		position: absolute;
+		top: 20%;
+		left: calc(50% - 30px);
+		text-align: center;
+		font-size: 50px;
+	}
+
+	.count {
+		position: absolute;
+		top: 30%;
+		left: 67%;
+
+	}
+
+	.count p {
+		font-size: 13px;
+	}
+
+	.connector {
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+
+	#space {
+		width: 100vw;
+		height: 20vh;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: 'Lato', sans-serif;
+		overflow-x: hidden;
+	}
+
+	#main-wrapper {
+		width: 50vw;
+		left: 25vw;
+		height: 100vh;
+		position: absolute;
+		top: 3vh;
+		z-index: 1;
+	}
+
+	#header {
+		text-align: center;
+	}
+
+	#underline {
+		height: 5px;
+		width: 50%;
+		background-color: black;
+		color: black;
+
+	}
+
+	.stop-wrapper {
+		height: 120px;
+		width: 80%;
+		position: relative;
+		left: 10%;
+		background-color: white;
+		z-index: 2;
+		color: black;
+		margin-bottom: 0px;
+		border: 2px solid black;
+		border-radius: 10px;
+	}
+
+	.data {
+		position: relative;
+		left: 5%;
+		top: 15%;
+		width: 40%;
+	}
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.letter {
+		width: 70px;
+		height: 70px;
+		background-color: #3DD232;
+		border: 2px solid black;
+		position: absolute;
+		top: 20%;
+		left: calc(50% - 35px);
+		text-align: center;
+		font-size: 50px;
+	}
+
+	.count {
+		position: absolute;
+		top: 30%;
+		left: 67%;
+
+	}
+
+	.count p {
+		font-size: 20px;
+	}
+
+	.connector {
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 3px;
+	}
+
+	#space {
+		width: 100vw;
+		height: 20vh;
+	}
+}

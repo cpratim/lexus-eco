@@ -1,0 +1,6 @@
+{
+	"bus-number": {
+		"A": ["time1", "address2"],
+		"B": ["time1", "address2"]
+	}
+}
